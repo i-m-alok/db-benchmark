@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS blog (
     updated_at TIMESTAMP,
     published_at TIMESTAMP,
     is_deleted BOOLEAN DEFAULT 0,
-    slug TEXT UNIQUE,
+    slug TEXT,
     FOREIGN KEY(user_id) REFERENCES user(id)
 );
 

@@ -24,7 +24,15 @@ This project sets up a SQLite3 database for benchmarking blog site performance.
    ```bash
    sqlite3 benchmark.db ".schema table_name"
    ```
-
+3. **Run SQL queries:**
+    Open the database
+    ```bash
+    sqlite3 benchmark.db
+    ```
+    Then run SQL queries,
+    ```bash
+    SELECT * FROM user LIMIT 10;
+    ```
 ## Tables Created
 - `user`: Stores user information
 - `blog`: Stores blog posts
@@ -35,5 +43,3 @@ This project sets up a SQLite3 database for benchmarking blog site performance.
 The main setup script is [`setup_sqlite.sh`](setup_sqlite.sh).
 
 ---
-
-Feel free to modify the schema or add more tables as needed for your benchmarking tests.
